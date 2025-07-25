@@ -5,11 +5,13 @@ export interface ButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     'onClick' | 'type'
   > {
+  className?: string;
   variant?: ButtonVariant;
   children: React.ReactNode;
 }
 
 export function Button({
+  className = '',
   variant = 'primary',
   children,
   ...nativeButtonProps
@@ -28,7 +30,7 @@ export function Button({
   return (
     <button
       {...nativeButtonProps}
-      className={`cursor-pointer font-bold py-2 px-4 rounded transition duration-100 ease-in-out ${variantStyles()}`}
+      className={`cursor-pointer font-bold py-2 px-4 rounded transition duration-100 ease-in-out ${variantStyles()} ${className}`}
     >
       {children}
     </button>

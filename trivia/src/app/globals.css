@@ -4,6 +4,7 @@
   --background: #c8c8c8;
   --background-floating: #919191;
   --text-primary: #000000;
+  --focus-ring-color: #898989;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +21,7 @@
   --color-text-primary: var(--text-primary);
   --font-sans: var(--font-roboto-sans);
   --font-mono: var(--font-roboto-mono);
+  --color-focus-ring: var(--focus-ring-color);
 }
 
 body {
