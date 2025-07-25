@@ -3,18 +3,21 @@
 :root {
   --background: #c8c8c8;
   --background-floating: #919191;
+  --text-primary: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1d2b43;
     --background-floating: #1f2f4a;
+    --text-primary: #ffffff;
   }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-floating: var(--background-floating);
+  --color-text-primary: var(--text-primary);
   --font-sans: var(--font-roboto-sans);
   --font-mono: var(--font-roboto-mono);
 }
