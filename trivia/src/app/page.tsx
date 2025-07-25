@@ -1,3 +1,5 @@
+import { Button } from './components/button';
+
 export default function Home() {
-  return <>Test</>;
+  return <Button variant='primary'>+ Add Quiz</Button>;
 }
