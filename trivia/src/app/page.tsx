@@ -1,8 +1,8 @@
 'use client';
 
-import { Button } from './components/button';
-import { Dialog } from './components/dialog';
-import { useOpenable } from './hooks/use-openable';
+import { Button } from '../components/button';
+import { Dialog } from '../components/dialog';
+import { useOpenable } from '../hooks/use-openable';
 
 export default function Home() {
   const { isOpen, handleOpen, handleClose } = useOpenable();
